@@ -1,8 +1,15 @@
-<footer class="flex-column justify-center items-center">
+---
+import { Icon } from 'astro-icon/components'
+---
+
+<footer class="flex flex-col justify-center items-center gap-2">
     <p>&copy; 2025 Alfonso Vidal. Todos los derechos reservados.</p>
-    <div class="social-links">
+    <div class="flex gap-4">
         <a href="https://github.com/Fansu7" target="_blank" rel="noopener noreferrer">
-            <img src="./svg/github.svg" alt="GitHub Logo" class="w-6 h-6" />
+            <Icon name="github" class="w-6 h-6" />
+        </a>
+        <a href="https://www.linkedin.com/in/alfonso-vidal-torres-476288280/" target="_blank" rel="noopener noreferrer">
+            <Icon name="icons8-linkedin" class="w-6 h-6" />
         </a>
     </div>
 </footer>
