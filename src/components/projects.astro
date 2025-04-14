@@ -1,0 +1,51 @@
+---
+import ProjectCard from "./ProjectCard.astro";
+
+const PROJECTS = [
+  {
+      title: "Company Manager",
+      description: "Aplicación montada con Angular y SpringBoot, que permite gestionar información de empresas, sus contactos y sus productos.",
+      url: "https://github.com/Fansu7/corp_manager_front",
+      image: "/companiesapp.webp",
+  }, 
+  {
+    title: "Just Taste It",
+    description: "Aplicación montada con Angular y la API de MealDB, que permite buscar recetas de comida, filtrar y ver los detalles de cada receta.",
+    url: "https://github.com/Fansu7/mealDB",
+    image: "/mealdb.webp",
+  },
+  {
+    title: "Breakout Game",
+    description: "Clásico juego de romper ladrillos, montado en Python usando su librería Turtle.",
+    url: "https://github.com/Fansu7/breakout-game",
+    image: "/breakout.webp",
+  },   
+  {
+    title: "Weather App",
+    description: "Aplicación que utiliza la Weather API y la libreria de Python TKinter para la interfaz gráfica.",
+    url: "https://github.com/Fansu7/watermark-app",
+    image: "/weatherapp.webp",
+  },
+  {
+    title: "YouTube Downloader",
+    description: "Pequeña aplicación en Python que permite descargar contenido de YouTube. Es posible seleccionar si se desea descargar el video, solo el audio o incluso una playlist entera.",
+    url: "https://github.com/Fansu7/yt-downloader",
+    image: "/ytdownloader.webp",
+  },
+  {
+    title: "Speed Typing Test",
+    description: "Aplicación que permite medir la velocidad de escritura, montada con Python y su librería TKinter para la GUI.",
+    url: "https://github.com/Fansu7/speed-typing-test",
+    image: "/speedtyping.webp",
+  },
+];
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 m-auto">
+    {PROJECTS.map((projects)=>(
+        <div>
+            <ProjectCard {... projects} />
+        </div>
+    ))
+}
+</div>
