@@ -3,7 +3,7 @@ const { title, description, image, url, skills} = Astro.props;
 ---
 
 
-<div class="flex flex-col h-[28rem] sm:h-[26rem] md:h-[28rem] lg:h-[30rem]  bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+<div class="flex flex-col h-[28rem] sm:h-[26rem] md:h-[28rem] lg:h-[30rem] border rounded-lg shadow-sm bg-gray-800 border-gray-700">
     <div class="">
         <a href={`.${image.replace('projects/portfolio/public', '')}`} target="_blank" rel="noopener noreferrer">
             <img class="w-full h-48 object-cover rounded-t-lg" src={image} alt="Weather App" />
@@ -11,8 +11,8 @@ const { title, description, image, url, skills} = Astro.props;
     </div>
     <div class="flex flex-col grow justify-between p-5">
         <div>
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{description}</p>
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">{title}</h5>
+            <p class="mb-3 font-normal text-gray-400">{description}</p>
         </div>
             <a href={url} class="inline-flex justify-center items-center px-3 py-2 mt-auto text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" target="_blank" rel="noopener noreferrer">
                 Ver código
